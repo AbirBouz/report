@@ -1,0 +1,18 @@
+/* luckynumber.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* En fin gradient bakgrund */
+    font-family: Arial, sans-serif;
+}
+
+.lucky-number-display {
+    font-size: 40px; /* Stora bokstäver */
+    color: white; /* Vit textfärg för kontrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Lägger till en textskugga för bättre läsbarhet */
+}

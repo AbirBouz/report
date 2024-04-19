@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="container">
+    <nav>
+                
+    <ul>
+        <li><a href="{{ path('home') }}">Om mig</a></li>
+        <li><a href="{{ path('about') }}">Om kursen</a></li>
+        <li><a href="{{ path('report') }}">Report</a></li>
+        <li><a href="{{ path('lucky_number') }}">Lucky number</a></li>
+    </ul>
+</nav>
+</container>
+</header>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('img/glider.svg') }}">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+    <div class="footer">
+    </footer>
+</html>

@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Aligns children (nav and main) in a column */
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* A beautiful gradient background */
+    font-family: 'Arial', sans-serif;
+    color: white; /* Default text color set to white for better contrast */
+}
+
+.site-header {
+    background-image: url('../images/background.jpg'); /* Ändra path_to_image till korrekt sökväg */
+    height: 150px; /* Önskad höjd */
+    padding: 0px; /* Önskad padding */
+    display: flex; /* Flex för att centrera innehållet vertikalt och horisontellt */
+    align-items: center;
+    justify-content: center;
+}
+
+.site-title {
+    font-size: 15px; /* Önskad textstorlek */
+    color: white; /* Exempelvis en vit textfärg */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    border: none;
+    padding: 10px;
+    width: 100%; /* Ensures the navbar spans the full width */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0; /* Removes default margin to align properly */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content area */
+main {
+    width: 90%; /* Adjust width as needed */
+    text-align: center; /* Centers all text inside main */
+    margin: auto; /* Centers main vertically and horizontally if needed */
+    flex-grow: 1; /* Allows main to take up any remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers main content */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    margin: 10px 0; /* Uniform margin for all headings */
+}
+
+h1 {
+    border-bottom: 4px double #ccc;
+    padding-bottom: 10px; /* Space below the text */
+}
+
+h2 {
+    font-size: 1.5em; /* 1.5 times larger than normal text */
+}
+
+h3 {
+    color: #b3e5fc; /* A lighter shade of blue for visual hierarchy */
+    font-size: 1.2em; /* 1.2 times larger than normal text */
+}
+
+/* Utility Classes */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+}
