@@ -26,6 +26,12 @@ class LuckyControllerJson
           );
           return $response;
     }
+    #[Route("/lucky/number/json", name: "lucky_number_json")]
+        public function numberJson(): Response
+        {
+            $number = random_int(0, 100);
+            return new JsonResponse(['number' => $number]);
+        }
 }   
 
 class ApiController

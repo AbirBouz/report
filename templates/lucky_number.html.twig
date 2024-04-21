@@ -1,17 +1,29 @@
 {% extends "base.html.twig" %}
-
 {% block title %}
-Magic number
+Magiska numret
 {% endblock %}
-
 {% block body %}
-<div>
-<h1>Magic number</h1>
-<div class="main">
-    <h2>Välkommen till sidan Magic Number!</h2>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Innehållskolumn -->
+        <div class="col-md-8">
+            <section>
+                <h3>Den magiska numret</h3>
+                <h2>Välkommen till sidan Magic Number!</h2>
     <h3>Detta är den nuvarande magiska siffran: {{ number }}</h3>
     <h3>Uppdatera sidan för att få ett nytt magiska number, hur många uppdateringar krävs för att få din favorit nummer mellan 1-100?</h3>
     <iframe src="https://giphy.com/embed/tei52cyY5mroA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/internet-tei52cyY5mroA">via GIPHY</a></p>
-</main>
+            </section>
+        </div>
+        <!-- Navigationskolumn -->
+        <div class="col-md-4">
+            <div class="sticky-top" style="top: 20px;">
+            <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('api_quote') }}"</li>Api</a>
+                    </li>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

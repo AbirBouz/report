@@ -44,4 +44,6 @@ class LuckyControllerTwig extends AbstractController
         return $this->render('api.html.twig');
     }
 
+    
+
 }
