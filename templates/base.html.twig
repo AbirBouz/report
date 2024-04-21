@@ -7,16 +7,17 @@
     <ul>
         <li><a href="{{ path('home') }}">Om mig</a></li>
         <li><a href="{{ path('about') }}">Om kursen</a></li>
+        <li><a href="{{ path('lucky_number') }}">Magic number</a></li>
         <li><a href="{{ path('report') }}">Report</a></li>
-        <li><a href="{{ path('lucky_number') }}">Lucky number</a></li>
     </ul>
 </nav>
-</container>
+</div>
 </header>
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="{{ asset('img/glider.svg') }}">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -30,5 +31,6 @@
         {% block body %}{% endblock %}
     </body>
     <div class="footer">
+    <p>Denna sidan är skapad av Abir Bouzenzana mvc-kursen 2024<p>
     </footer>
 </html>

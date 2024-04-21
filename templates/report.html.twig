@@ -1,7 +1,71 @@
-{% extends "base.html.twig" %}
+{% extends 'base.html.twig' %}
 
 {% block title %}Report{% endblock %}
 
 {% block body %}
-    <h1>Presentation av varje kursmoment</h1>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Navigationskolumn -->
+        <div class="col-md-4">
+            <div class="sticky-top" style="top: 20px;">
+                <h4>Rapportsektioner</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom01">Kmom01</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom02">Kmom02</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom03">Kmom03</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom04">Kmom04</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom05">Kmom05</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom06">Kmom06</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kmom10">Kmom10</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Innehållskolumn -->
+        <div class="col-md-8">
+            <section id="kmom01">
+                <h3>Kmom01</h3>
+                <p>Detaljerad information om Kmom01...</p>
+            </section>
+            <section id="kmom02">
+                <h3>Kmom02</h3>
+                <p>Detaljerad information om Kmom02...</p>
+            </section>
+            <section id="kmom03">
+                <h3>Kmom03</h3>
+                <p>Detaljerad information om Kmom03...</p>
+            </section>
+            <section id="kmom04">
+                <h3>Kmom04</h3>
+                <p>Detaljerad information om Kmom04...</p>
+            </section>
+             <section id="kmom05">
+                <h3>Kmom04</h3>
+                <p>Detaljerad information om Kmom05...</p>
+            </section>
+             <section id="kmom06">
+                <h3>Kmom04</h3>
+                <p>Detaljerad information om Kmom06...</p>
+             <section id="kmom10">
+                <h3>Kmom10</h3>
+                <p>Detaljerad information om Kmom10...</p>
+            </section>
+            </section>
+        </div>
+    </div>
+</div>
 {% endblock %}

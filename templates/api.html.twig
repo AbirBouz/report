@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block title %}Api{% endblock %}
+{% block body %}
+<div>
+    <h1>Api</h1>
+    <div class="main">
+        <p><a href="{{ path('lucky_number') }}">Hämta Magic Number</a></p>
+        <p><a href="{{ path('api_quote') }}">Hämta Dagens Citat</a></p>
+    </div>
+</div>
+{% endblock %}
