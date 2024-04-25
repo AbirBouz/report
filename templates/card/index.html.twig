@@ -13,10 +13,9 @@
         <li>Card: Representerar ett enskilt kort.</li>
         <li>Shuffle: Visar samtliga kort i kortleken när den har blandats.</li>
         <li>Draw Card: Visar 5 slumpmässiga kort som dras samt antalet som är kvar.</li>
+
     </ul>
 </div>
-
-<img src="/path_to_uml_diagram_image.png" alt="UML Diagram" />
 
 <div>
     <h2>Navigera i Appen</h2>
@@ -24,7 +23,9 @@
     <a href="{{ path('card_deck_shuffle') }}">Blanda Kortlek</a> |
     <a href="{{ path('card_deck_draw') }}">Dra ett Kort</a> |
     <a href="{{ path('card_deck_draw_multiple', {'number': 5}) }}">Dra 5 kort</a> |
-    <a href="{{ path('session_delete') }}">Återställ kortlek</a>
+    <a href="{{ path('session_delete') }}">Återställ kortlek i session</a> |
+    <a href="{{ path('uml') }}">UML Diagram</a>
+
 
 </div>
 {% endblock %}

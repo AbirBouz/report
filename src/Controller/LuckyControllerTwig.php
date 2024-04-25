@@ -51,5 +51,11 @@ class LuckyControllerTwig extends AbstractController
         return $this->render('card.html.twig');
     }
 
+    #[Route("/uml", name: "uml")]
+    public function uml(): Response
+    {
+        return $this->render('uml.html.twig');
+    }
+
 
 }
