@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div>
+    <h1>Session Management</h1>
+    <!-- Other session-related information -->
+
+    <!-- Link to delete the session -->
+    <a href="{{ path('session_delete') }}">Delete Session</a>
+
+    <!-- Display any flash messages -->
+    {% for message in app.flashes('notice') %}
+        <div class="alert alert-info">{{ message }}</div>
+    {% endfor %}
+</div>
+{% endblock %}

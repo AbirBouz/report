@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kortlek App{% endblock %}
+
+{% block body %}
+<h1>Välkommen till Kortlek Appen!</h1>
+<p>Denna applikation låter dig hantera en virtuell kortlek.</p>
+
+<div>
+    <h2>Klasser i systemet</h2>
+    <ul>
+        <li>Deck: Hanterar en samling av kort.</li>
+        <li>Card: Representerar ett enskilt kort.</li>
+        <li>Shuffle: Visar samtliga kort i kortleken när den har blandats.</li>
+        <li>Draw Card: Visar 5 slumpmässiga kort som dras samt antalet som är kvar.</li>
+    </ul>
+</div>
+
+<img src="/path_to_uml_diagram_image.png" alt="UML Diagram" />
+
+<div>
+    <h2>Navigera i Appen</h2>
+    <a href="{{ path('card_deck') }}">Visa Kortlek</a> |
+    <a href="{{ path('card_deck_shuffle') }}">Blanda Kortlek</a> |
+    <a href="{{ path('card_deck_draw') }}">Dra ett Kort</a> |
+    <a href="{{ path('card_deck_draw_multiple', {'number': 5}) }}">Dra 5 kort</a>
+
+</div>
+{% endblock %}

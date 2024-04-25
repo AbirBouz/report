@@ -55,4 +55,6 @@ class LuckyController
 
         return new JsonResponse($data);
     }
+
+
 }

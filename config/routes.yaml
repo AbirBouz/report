@@ -3,3 +3,16 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+session_show:
+    path: /session
+    controller: App\Controller\SessionController::show
+
+session_delete:
+    path: /session/delete
+    controller: App\Controller\SessionController::delete
+
+lucky_number_json:
+    path: /lucky/number/json
+    controller: App\Controller\LuckyControllerJson::numberJson
+

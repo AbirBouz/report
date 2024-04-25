@@ -1,0 +1,41 @@
+{% block title %}Dra ett Kort{% endblock %}
+{% block styles %}
+<style>
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.Hearts, .Diamonds {
+    color: red;
+}
+
+.Spades, .Clubs {
+    color: black;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+<h1>Draget Kort</h1>
+<div class="card-container">
+    {% if card %}
+        <div class="card {{ card.suit | lower }}">
+            {{ card.rank }}{{ card.suitSymbol }}
+        </div>
+        <p>Antal kvarvarande kort: {{ remaining }}</p>
+    {% else %}
+        <p>Inga fler kort att dra.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% block title %}Visa Kortlek{% endblock %}
+
+{% block styles %}
+<style>
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.Hearts, .Diamonds {
+    color: red;
+}
+
+.Spades, .Clubs {
+    color: black;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+<h1>Sorterad Kortlek</h1>
+<div class="card-container">
+    {% for card in cards %}
+        <div class="card {{ card.suit | lower }}">
+            {{ card.rank }}{{ card.suitSymbol }}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
